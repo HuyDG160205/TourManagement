@@ -5,6 +5,8 @@
  */
 package runtime;
 
+import data.TourManagement;
+
 /**
  *
  * @author Gia Huy
@@ -15,7 +17,16 @@ public class Program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String url = "C:\\Users\\Gia Huy\\Documents\\GitHub\\TourManagement\\tourManagement\\Tour.txt";
+        String url2 = "C:\\Users\\Gia Huy\\Documents\\GitHub\\TourManagement\\tourManagement\\Hotel.txt";
+        TourManagement TourList = new TourManagement();
+        TourList.loadFromFile(url);
+        
+        TourList.addNewTour();
+        TourList.showTourList();
+        TourList.updateTour();
+        
+        
     }
     
 }

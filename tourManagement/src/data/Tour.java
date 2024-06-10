@@ -68,7 +68,45 @@ public class Tour {
     public String getExclusions() {
         return exclusions;
     }
+
+    public void setTourName(String tourName) {
+        this.tourName = tourName;
+    }
+
+    public void setTourDestination(String tourDestination) {
+        this.tourDestination = tourDestination;
+    }
+
+    public void setTourDuration(int tourDuration) {
+        this.tourDuration = tourDuration;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setInclusions(String inclusions) {
+        this.inclusions = inclusions;
+    }
+
+    public void setExclusions(String exclusions) {
+        this.exclusions = exclusions;
+    }
     
+    
+
+    @Override
+    public String toString() {
+        return tourId + ", " + tourName + ", " + tourDestination + ", " + tourDuration + ", " + description + ", " + price + ", " + inclusions + ", " + exclusions;
+    }
+    
+    public void showInFor(){
+        System.out.println(tourId + ", " + tourName + ", " + tourDestination + ", " + tourDuration + ", " + description + ", " + price + ", " + inclusions + ", " + exclusions);
+    }
     
     
 }
